@@ -42,9 +42,7 @@ public class UC01CadastrarEmpresa {
 	public void CT01UC01FBCadastra_com_sucesso() {
 				assertEquals(1,empresaDAO.adiciona(empresa));
 	}
-	/**
-	 * 
-	 */
+
 	@Test
 	public void CT02UC01FBCadastra_cnpj_invalido() {
 		assertEquals("CNPJ invalido.",empresa.setCnpj("89424"));
